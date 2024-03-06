@@ -13,5 +13,6 @@ struct Example_ProjectApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.plain)
     }
 }

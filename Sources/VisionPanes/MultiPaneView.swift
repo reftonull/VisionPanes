@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MultiPaneView<Item, MainView, PaneView>: UIViewControllerRepresentable where Item: Identifiable, MainView: View, PaneView: View {
     var item: Item?
-    @State var oldItem: Item? = nil
+    var configuration: MultiPaneViewConfiguration
     
     @ViewBuilder var mainView: () -> MainView
     @ViewBuilder var paneView: () -> PaneView
@@ -17,6 +17,7 @@ struct MultiPaneView<Item, MainView, PaneView>: UIViewControllerRepresentable wh
     func makeUIViewController(context: Context) -> MultiPaneViewController<Item, MainView, PaneView> {
         let viewController = MultiPaneViewController(
             item: item,
+            configuration: configuration,
             mainView: mainView(),
             paneView: paneView()
         )
@@ -27,10 +28,10 @@ struct MultiPaneView<Item, MainView, PaneView>: UIViewControllerRepresentable wh
         _ uiViewController: MultiPaneViewController<Item, MainView, PaneView>,
         context: Context
     ) {
-        if (oldItem == nil && item != nil) || (oldItem != nil && item == nil) {
-            uiViewController._updateWindowGeometry()
-            oldItem = item
-        }
+        uiViewController.item = item
+        uiViewController.configuration = configuration
+        
+        uiViewController._updateWindowGeometry()
         
         uiViewController.paneController?.rootView = paneView()
     }
