@@ -103,8 +103,12 @@ The `content` closure takes as input the non-nil version of item, allowing you t
 
 ## Examples
 ### Panes along all edges
+
+https://github.com/reftonull/VisionPanes/assets/66828631/c270ffc4-79c1-42b3-88ed-7987ceb300f9
+
 <details>
 <summary>Source Code</summary>
+    
 ```swift
 struct Item: Identifiable, Equatable {
     var id: String
@@ -176,11 +180,16 @@ struct AllEdges: View {
     }
 }
 ```
+
 </details>
 
 ### Multiple panes along the same edge
+
+https://github.com/reftonull/VisionPanes/assets/66828631/51bbe736-2929-4b06-a0eb-77fea6cf32e1
+
 <details>
 <summary>Source Code</summary>
+    
 ```swift
 struct Item: Identifiable, Equatable {
     var id: String
@@ -224,10 +233,14 @@ struct SameEdge: View {
     }
 }
 ```
+
 </details>
 
 ## Demo Project
-The demo project can be found here. It includes both examples above, and will expand with more use cases in the future.
+The demo project can be found [here](https://github.com/reftonull/VisionPanes/tree/main/Example%20Project). It includes both examples above, and will expand with more use cases in the future.
+
+## Contributing
+Issues and pull requests are welcome!
 
 ## Credits
 This package is built by [Laksh Chakraborty](https://github.com/reftonull).
