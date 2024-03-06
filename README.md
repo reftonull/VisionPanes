@@ -62,7 +62,7 @@ struct ContentView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .glassBackgroundEffect()
-        .pane(item: item2, placement: .trailing) { item in // 3.
+        .pane(item: item, placement: .trailing) { item in // 3.
              Text(item.text)
                  .frame(
                     maxWidth: .infinity,
