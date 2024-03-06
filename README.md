@@ -237,7 +237,10 @@ struct SameEdge: View {
 </details>
 
 ## Demo Project
-The demo project can be found here. It includes both examples above, and will expand with more use cases in the future.
+The demo project can be found [here](https://github.com/reftonull/VisionPanes/tree/main/Example%20Project). It includes both examples above, and will expand with more use cases in the future.
+
+## Contributing
+Issues and pull requests are welcome!
 
 ## Credits
 This package is built by [Laksh Chakraborty](https://github.com/reftonull).
