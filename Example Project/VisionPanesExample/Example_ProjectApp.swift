@@ -11,7 +11,7 @@ import SwiftUI
 struct Example_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SameEdge()
         }
         .windowStyle(.plain)
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A9713572B98159A005B65AD /* VisionPanes in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9713562B98159A005B65AD /* VisionPanes */; };
+		5A9713592B983EAC005B65AD /* SameEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9713582B983EAC005B65AD /* SameEdge.swift */; };
 		5ADC1A292B97DDC100D6787F /* Example_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC1A282B97DDC100D6787F /* Example_ProjectApp.swift */; };
 		5ADC1A2B2B97DDC100D6787F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC1A2A2B97DDC100D6787F /* ContentView.swift */; };
 		5ADC1A2D2B97DDC200D6787F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC1A2C2B97DDC200D6787F /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		5A19F02D2B9813A2008C1CBF /* VisionPanesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionPanesTests.swift; sourceTree = "<group>"; };
+		5A9713582B983EAC005B65AD /* SameEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameEdge.swift; sourceTree = "<group>"; };
 		5AD50B2A2B98157B004E8A19 /* VisionPanes */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = VisionPanes; path = ..; sourceTree = "<group>"; };
 		5ADC1A212B97DDC100D6787F /* VisionPanesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionPanesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADC1A282B97DDC100D6787F /* Example_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_ProjectApp.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				5ADC1A282B97DDC100D6787F /* Example_ProjectApp.swift */,
 				5ADC1A2A2B97DDC100D6787F /* ContentView.swift */,
+				5A9713582B983EAC005B65AD /* SameEdge.swift */,
 				5ADC1A2C2B97DDC200D6787F /* Assets.xcassets */,
 				5A19F02F2B9813A2008C1CBF /* Tests */,
 				5ADC1A312B97DDC200D6787F /* Info.plist */,
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ADC1A2B2B97DDC100D6787F /* ContentView.swift in Sources */,
+				5A9713592B983EAC005B65AD /* SameEdge.swift in Sources */,
 				5ADC1A292B97DDC100D6787F /* Example_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
