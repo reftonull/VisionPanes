@@ -31,8 +31,13 @@ struct MultiPaneView<Item, MainView, PaneView>: UIViewControllerRepresentable wh
         uiViewController.item = item
         uiViewController.configuration = configuration
         
-        uiViewController._updateWindowGeometry()
+        // Make sure the item has changed when updating geometry
+        if uiViewController.item?.id != uiViewController.previousItem?.id {
+            uiViewController._updateWindowGeometry()
+        }
         
+        uiViewController.previousItem = item
+            
         uiViewController.paneController?.rootView = paneView()
     }
 }
