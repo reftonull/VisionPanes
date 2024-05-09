@@ -43,6 +43,8 @@ class MultiPaneViewController<Item, MainView, PaneView>: UIViewController where 
         guard let window = view.window else { return }
         guard let scene = window.windowScene else { return }
         
+        guard item?.id != previousItem?.id else { return }
+        
         let geo = UIWindowScene.GeometryPreferences.Vision()
         
         geo.size = window.bounds.size
